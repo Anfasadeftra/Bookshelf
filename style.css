@@ -1,0 +1,290 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-top {
+    width: 100%;
+    height: 200px;
+    background-image: url(assets/img/rak.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-content {
+    padding: 50px 0 50px 30px;
+    font-size: 40px;
+    color: white;
+}
+
+.box-1 {
+    padding: 5px;
+    width: 32%;
+}
+
+.box-2 {
+    padding: 5px;
+    width: 50%;
+}
+
+p,
+h4 {
+    color: gray;
+}
+
+.my {
+    margin-top: 70px;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: -45px;
+
+}
+
+.container {
+    background: white;
+    border-radius: 11px;
+    margin-left: 20px;
+    box-shadow: 0 5px 10px rgba(150, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+    padding: 25px;
+}
+
+.container .img-user img {
+    width: 80px;
+    border-radius: 50%;
+    top: 0;
+    left: 35%;
+    background: #fff;
+    padding: 4px;
+    margin-top: -40px;
+    position: absolute;
+}
+
+.container .user-name {
+    padding-left: 25px;
+    padding-top: 25px;
+    color: #0047ab;
+}
+
+.container .user-bio {
+    color: black;
+    padding-left: 25px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.container ul {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container ul li {
+    list-style: none;
+    margin: 10px;
+    width: 50%;
+}
+
+.container ul li p {
+    text-transform: uppercase;
+}
+
+.container ul li h4 {
+    color: #0047ab;
+    font-size: 24px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 10px;
+    box-sizing: border-box !important;
+}
+
+.icons>.column {
+    box-sizing: border-box !important;
+    color: rgba(90, 80, 89, 1);
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: calc(99% / 3) !important;
+}
+
+.book-icon {
+    width: 48px;
+}
+
+.read-icon,
+.unread-icon,
+.add {
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+    transition-property: color;
+    background: linear-gradient(90deg, rgba(36, 108, 202, 0.7), rgba(41, 111, 202, 0.7));
+}
+
+.content-book {
+    display: flex;
+    box-sizing: border-box !important;
+    justify-content: space-between;
+}
+
+.read-icon:hover,
+.unread-icon:hover,
+.add:hover {
+    background-color: #2978f8;
+}
+
+
+#data {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    background-color: rgba(203, 209, 243, 0.7);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    display: none;
+    transition: 1s all !important;
+    transition-property: color !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-open {
+    transition: 1s all !important;
+    transition-property: color !important;
+    display: flex !important;
+}
+
+#form input {
+    width: 90% !important;
+    border-radius: 10px !important;
+    margin: 12px 0 !important;
+    background: transparent !important;
+    padding: 10px;
+}
+
+#form .tombol {
+    border: none;
+    outline: none;
+    color: black;
+    background: rgba(146, 136, 137, 0.603);
+    font-size: 15px;
+    padding: 2px 15px;
+    border-radius: 5px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.read-button {
+    font-family: uicons-regular-rounded !important;
+    content: '\f131' !important;
+    padding: 15px;
+    background: linear-gradient(170deg, rgba(31, 213, 162, 1), rgba(48, 213, 260, 1));
+    border-radius: 45%;
+    border: none;
+    outline: none;
+    width: 30%;
+    margin: auto;
+    box-sizing: border-box;
+    color: white;
+    transition-property: color;
+    transition: .5s ease;
+    opacity: .9;
+}
+
+.read-button:before {
+    content: '\f12f';
+}
+
+
+.unread-button {
+    font-family: uicons-regular-rounded !important;
+    content: '\f131' !important;
+    padding: 15px;
+    background: linear-gradient(170deg, rgba(255, 173, 26), rgba(253, 132, 69));
+    border-radius: 50%;
+    transition-property: color;
+    transition: .5s ease-out;
+    border: none;
+    outline: none;
+    width: 30%;
+    margin: 10px 0 10px 10px;
+    box-sizing: border-box;
+    color: white;
+    opacity: .9;
+
+}
+
+.unread-button:before {
+    content: '\f131';
+}
+
+
+.trash-book {
+    font-family: uicons-regular-rounded !important;
+    content: '\f24a' !important;
+    padding: 15px;
+    transition-property: color;
+    transition: .5s ease-out;
+    background: linear-gradient(170deg, #41d38a, #331c58);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 30%;
+    margin: 10px;
+    box-sizing: border-box;
+    color: white;
+    opacity: .9;
+}
+
+.trash-book:before {
+    content: '\f24a';
+}
+
+.read-button:hover,
+.unread-button:hover,
+.trash-book:hover {
+    opacity: 1;
+    transform: rotate(-360deg);
+}
+
+@media screen and (max-width: 576px) {
+
+    .content,
+    .content-book {
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2,
+    .unread,
+    .read {
+        box-sizing: border-box !important;
+        width: 100% !important;
+    }
+
+}

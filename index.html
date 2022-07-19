@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookself Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-top">
+        <div class="nav-content">
+            <h2>Aplikasi Bookself</h2>
+            <h6>Mengelola Buku Menjadi Lebih Mudah!</h6>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="box-1">
+            <div class="my container">
+                <div class="img-user">
+                    <img src="assets/img/profil.jpg" alt="profl" />
+                </div>
+                <h1 class="user-name">Anfasa Ade Fatra</h1>
+                <p class="user-bio"> Mahasiswa </p>
+                <ul>
+                    <li>
+                        <p>Jumlah Buku</p>
+                        <h5 id="jumlahBuku">20</h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="my container icons">
+                <div class="column">
+                    <div class="read-icon">
+                        <img class="book-icon" src="assets/img/book.png" alt="book">
+                    </div>
+                    <h4>Dibaca</h4>
+                </div>
+                <div class="column">
+                    <div class="unread-icon">
+                        <img class="book-icon" src="assets/img/bookmark.png" alt="bookmark" content="\f131">
+                    </div>
+                    <h4>Belum Dibaca</h4>
+                </div>
+                <div class="column">
+                    <div class="add" id="add-book">
+                        <img class="book-icon" src="assets/img/plus.png" alt="add">
+                    </div>
+                    <h4>Tambah Buku</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-2">
+            <div class="my">
+                <div class="content-book">
+                    <div class="unread" id="unread">
+                        <h4>Belum Dibaca</h4>
+                    </div>
+                    <div class="read" id="read">
+                        <h4>Sudah Dibaca</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="data">
+        <section class="container">
+            <h1>Buku Terbaru</h1>
+            <form id="form">
+                <div class="input-data">
+                    <input type="text" id="title" placeholder="Judul Buku" class="input-form" maxlength="120"
+                        pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-data">
+                    <input type="text" id="author" placeholder="Author" class="input-form" maxlength="60"
+                        pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-data">
+                    <input type="date" id="year" class="input-form" min="1900" max="2026" />
+                </div>
+                <div class="button-hasil">
+                    <button type="reset" class="tombol" id="close">Tutup</button>
+                    <button type="submit" class="tombol" id="save">Simpan</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/data.js"></script>
+
+</body>
+
+</html>
